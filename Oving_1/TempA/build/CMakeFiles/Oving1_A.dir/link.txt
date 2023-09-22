@@ -1,0 +1,1 @@
+/usr/bin/c++  -std=c++1y -Wall -Wextra CMakeFiles/Oving1_A.dir/temperatureA.cpp.o -o Oving1_A 

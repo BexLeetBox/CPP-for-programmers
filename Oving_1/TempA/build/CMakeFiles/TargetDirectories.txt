@@ -1,0 +1,3 @@
+/mnt/e/CPP/TEST/TempA/build/CMakeFiles/Oving1_A.dir
+/mnt/e/CPP/TEST/TempA/build/CMakeFiles/edit_cache.dir
+/mnt/e/CPP/TEST/TempA/build/CMakeFiles/rebuild_cache.dir

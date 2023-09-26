@@ -3,4 +3,4 @@ project(Container_Auto_Lambda)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Container_Auto_Lambda oppgave1.cpp)
+add_executable(Container_Auto_Lambda oppgave1.cpp oppgave2.cpp)

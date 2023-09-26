@@ -55,6 +55,12 @@ build CMakeFiles/Container_Auto_Lambda.dir/oppgave1.cpp.obj: CXX_COMPILER__Conta
   OBJECT_DIR = CMakeFiles\Container_Auto_Lambda.dir
   OBJECT_FILE_DIR = CMakeFiles\Container_Auto_Lambda.dir
 
+build CMakeFiles/Container_Auto_Lambda.dir/oppgave2.cpp.obj: CXX_COMPILER__Container_Auto_Lambda_Debug E$:/CPP/Container_Auto_Lambda/oppgave2.cpp || cmake_object_order_depends_target_Container_Auto_Lambda
+  DEP_FILE = CMakeFiles\Container_Auto_Lambda.dir\oppgave2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Container_Auto_Lambda.dir
+  OBJECT_FILE_DIR = CMakeFiles\Container_Auto_Lambda.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Container_Auto_Lambda
@@ -63,7 +69,7 @@ build CMakeFiles/Container_Auto_Lambda.dir/oppgave1.cpp.obj: CXX_COMPILER__Conta
 #############################################
 # Link the executable Container_Auto_Lambda.exe
 
-build Container_Auto_Lambda.exe: CXX_EXECUTABLE_LINKER__Container_Auto_Lambda_Debug CMakeFiles/Container_Auto_Lambda.dir/oppgave1.cpp.obj
+build Container_Auto_Lambda.exe: CXX_EXECUTABLE_LINKER__Container_Auto_Lambda_Debug CMakeFiles/Container_Auto_Lambda.dir/oppgave1.cpp.obj CMakeFiles/Container_Auto_Lambda.dir/oppgave2.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Container_Auto_Lambda.dir

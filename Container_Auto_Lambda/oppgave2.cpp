@@ -1,4 +1,6 @@
 #include <gtkmm.h>
+#include <gtkmm/cssprovider.h>
+#include <glibmm/refptr.h>
 
 class Window : public Gtk::Window {
 public:
@@ -16,6 +18,7 @@ public:
         label_first_name.set_text("First Name:");
         label_last_name.set_text("Last Name:");
 
+        button_combine.set_name("combine-button");
         button_combine.set_label("Combine Names");
         button_combine.set_sensitive(false); // Set button insensitive by default
 
@@ -32,6 +35,7 @@ public:
 
         entry_first_name.signal_changed().connect(sigc::mem_fun(*this, &Window::on_entry_changed));
         entry_last_name.signal_changed().connect(sigc::mem_fun(*this, &Window::on_entry_changed));
+
 
         button_combine.signal_clicked().connect([this]() {
             label_full_name.set_text("Full Name: " + entry_first_name.get_text() + " " + entry_last_name.get_text());
@@ -50,5 +54,26 @@ public:
 int main() {
     auto app = Gtk::Application::create();
     Window window;
+
+    // Create a CSS provider and load the CSS data
+    Glib::RefPtr<Gtk::CssProvider> css_provider = Gtk::CssProvider::create();
+    css_provider->load_from_data(
+            "#combine-button {"
+            "    background-color: blue;"
+            "    font-weight: bold;"
+            "    font-size: 1.5em;"
+            "    border: 1px solid black;"
+            "}"
+    );
+
+
+    // Add the CSS provider to the app's default screen
+    Gtk::StyleContext::add_provider_for_screen(
+            Gdk::Screen::get_default(),
+            css_provider,
+            GTK_STYLE_PROVIDER_PRIORITY_APPLICATION
+    );
+
+
     return app->run(window);
 }

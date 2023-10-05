@@ -1,8 +1,9 @@
-
 #include "ChessBoard.h"
+#include "ChessBoardPrint.h"
 
 int main() {
     ChessBoard board;
+    ChessBoardPrint print(board);
 
     board.squares[4][0] = make_unique<ChessBoard::King>(ChessBoard::Color::WHITE);
     board.squares[1][0] = make_unique<ChessBoard::Knight>(ChessBoard::Color::WHITE);

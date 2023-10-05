@@ -2,13 +2,20 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include <functional>
 
 using namespace std;
+class ChessBoardPrint;
+
 
 class ChessBoard {
 public:
     enum class Color { WHITE,
         BLACK };
+
+    // Functor to be called after each piece move
+    mutable std::function<void()> after_piece_move;
+
 
     class Piece {
     public:
@@ -112,7 +119,10 @@ public:
                     }
                 }
                 piece_to = move(piece_from);
-                print_board();
+
+                // Call the functor
+                if (after_piece_move) after_piece_move();
+
                 return true;
             } else {
                 cout << "can not move " << piece_from->color_string() << " " << piece_from->type() << " from " << from << " to " << to << endl;

@@ -113,7 +113,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=E:/CPP/Oving-6/cmake-build-debug/CMakeFi
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Oving_6
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/Oving_5
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=E:/CLion 2022.3.1/bin/mingw/bin/ld.exe
@@ -247,15 +247,6 @@ Oving_5_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Oving_5_SOURCE_DIR:STATIC=E:/CPP/Oving-6
-
-//Value Computed by CMake
-Oving_6_BINARY_DIR:STATIC=E:/CPP/Oving-6/cmake-build-debug
-
-//Value Computed by CMake
-Oving_6_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-Oving_6_SOURCE_DIR:STATIC=E:/CPP/Oving-6
 
 
 ########################

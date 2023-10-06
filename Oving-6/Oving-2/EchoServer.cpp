@@ -27,22 +27,26 @@ private:
                                  getline(read_stream, line);
                                  string request_type = line.substr(0, line.find(' '));
 
-                                 // Only handle GET requests
                                  if(request_type == "GET") {
                                      string request_path = line.substr(line.find(' ') + 1, line.rfind(' ') - line.find(' ') - 1);
+                                     string response;
 
-                                     ostream response_stream(read_buffer.get());
                                      if(request_path == "/") {
-                                         response_stream << "HTTP/1.1 200 OK\r\nContent-Length: 22\r\n\r\nDette er hovedsiden";
+                                         response = "HTTP/1.1 200 OK\r\nContent-Length: 19\r\nConnection: close\r\n\r\nDette er hovedsiden";
                                      } else if(request_path == "/en_side") {
-                                         response_stream << "HTTP/1.1 200 OK\r\nContent-Length: 20\r\n\r\nDette er en side";
+                                         response = "HTTP/1.1 200 OK\r\nContent-Length: 16\r\nConnection: close\r\n\r\nDette er en side";
                                      } else {
-                                         response_stream << "HTTP/1.1 404 Not Found\r\nContent-Length: 0\r\n\r\n";
+                                         response = "HTTP/1.1 404 Not Found\r\nContent-Length: 13\r\nConnection: close\r\n\r\n404 not found";
                                      }
 
-                                     async_write(connection->socket, *read_buffer, [this, connection, read_buffer](const boost::system::error_code &ec, size_t) {
-                                         if (!ec)
+                                     async_write(connection->socket, boost::asio::buffer(response), [this, connection](const boost::system::error_code &ec, size_t) {
+                                         // Close the connection after sending the response
+                                         connection->socket.close();
+                                         if (!ec) {
                                              handle_request(connection);
+                                         } else {
+                                             cerr << "Error reading: " << ec.message() << endl;
+                                         }
                                      });
                                  }
                              }

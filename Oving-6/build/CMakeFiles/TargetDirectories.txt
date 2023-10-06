@@ -1,3 +1,0 @@
-/mnt/e/CPP/Oving-6/build/CMakeFiles/Oving_5.dir
-/mnt/e/CPP/Oving-6/build/CMakeFiles/edit_cache.dir
-/mnt/e/CPP/Oving-6/build/CMakeFiles/rebuild_cache.dir

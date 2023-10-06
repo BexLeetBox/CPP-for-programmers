@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic CMakeFiles/Oving_5.dir/Main.cpp.o -o Oving_5 

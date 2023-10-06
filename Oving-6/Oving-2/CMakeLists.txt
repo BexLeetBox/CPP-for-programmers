@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(Oving_5)
+project(Oving_6)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -8,4 +8,4 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
 endif()
 
 add_executable(Oving_6
-        Main.cpp ChessBoard.h ChessBoardPrint.h)
+       EchoServer.cpp)

@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Wextra -Wpedantic CMakeFiles/Oving_6.dir/EchoServer.cpp.o -o Oving_6 

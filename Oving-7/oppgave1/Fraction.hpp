@@ -24,8 +24,8 @@ public:
     Fraction operator/(const Fraction &other) const;
     Fraction operator-() const;
     Fraction operator-(int value) const;
-    // Outside the class declaration
-    Fraction operator-(int value, const Fraction& fraction);
+    friend Fraction operator-(int value, const Fraction& fraction);
+
 
     Fraction &operator++(); // Preinkrement
     Fraction &operator--(); // Predekrement

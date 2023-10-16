@@ -47,8 +47,9 @@ Fraction Fraction::operator-(const Fraction &other) const {
 Fraction operator-(int value, const Fraction& fraction) {
     return Fraction(value * fraction.denominator - fraction.numerator, fraction.denominator);
 }
-
-
+Fraction Fraction::operator-(int value) const {
+    return Fraction(numerator - value * denominator, denominator);
+}
 
 
 Fraction &Fraction::operator-=(const Fraction &other) {

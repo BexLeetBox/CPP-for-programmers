@@ -1,8 +1,4 @@
 # ninja log v5
-1	369	7191958694679514	CMakeFiles/Oving_7.dir/main.cpp.obj	4409cf2b1b81a1fe
-3	433	7191960033616562	CMakeFiles/Oving_7.dir/Fraction.cpp.obj	c3d7d1c1656df19b
-434	576	7191960035002867	Oving_7.exe	2f438347d788be8d
 4	464	7191972475221975	CMakeFiles/Oving_7.dir/main.cpp.obj	4409cf2b1b81a1fe
-9	545	7191972476035405	CMakeFiles/Oving_7.dir/Fraction.cpp.obj	c3d7d1c1656df19b
 3	501	7191973310774449	CMakeFiles/Oving_7.dir/Fraction.cpp.obj	c3d7d1c1656df19b
 501	639	7191973312115871	Oving_7.exe	2f438347d788be8d

@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/Oving_7.dir/main.cpp.o CMakeFiles/Oving_7.dir/Fraction.cpp.o -o Oving_7 

@@ -51,13 +51,13 @@ build cmake_object_order_depends_target_Oving_7: phony || CMakeFiles/Oving_7.dir
 
 build CMakeFiles/Oving_7.dir/main.cpp.obj: CXX_COMPILER__Oving_7_Debug E$:/CPP/Oving-7/oppgave1/main.cpp || cmake_object_order_depends_target_Oving_7
   DEP_FILE = CMakeFiles\Oving_7.dir\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -pedantic -std=gnu++17
   OBJECT_DIR = CMakeFiles\Oving_7.dir
   OBJECT_FILE_DIR = CMakeFiles\Oving_7.dir
 
 build CMakeFiles/Oving_7.dir/Fraction.cpp.obj: CXX_COMPILER__Oving_7_Debug E$:/CPP/Oving-7/oppgave1/Fraction.cpp || cmake_object_order_depends_target_Oving_7
   DEP_FILE = CMakeFiles\Oving_7.dir\Fraction.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always -Wall -Wextra -pedantic -std=gnu++17
   OBJECT_DIR = CMakeFiles\Oving_7.dir
   OBJECT_FILE_DIR = CMakeFiles\Oving_7.dir
 
@@ -116,6 +116,11 @@ build Oving_7: phony Oving_7.exe
 # Folder: E:/CPP/Oving-7/oppgave1/cmake-build-debug
 
 build all: phony Oving_7.exe
+
+# =============================================================================
+# Unknown Build Time Dependencies.
+# Tell Ninja that they may appear as side effects of build rules
+# otherwise ordered by order-only dependencies.
 
 # =============================================================================
 # Built-in targets

@@ -1,0 +1,7 @@
+# ninja log v5
+5	645	7197156559156163	CMakeFiles/templates.dir/oppgave-1/template.cpp.obj	2c31e67f1f0c53a5
+1	500	7197156557683553	CMakeFiles/templates.dir/main.cpp.obj	657373069617a422
+2	199	7197157281501772	build.ninja	ba85ad03ac683a25
+3	142	7197157283489076	templates.exe	1694118fa0cf5b6c
+3	541	7197158266608526	CMakeFiles/templates.dir/oppgave-1/template.cpp.obj	2c31e67f1f0c53a5
+542	670	7197158267870662	templates.exe	1694118fa0cf5b6c

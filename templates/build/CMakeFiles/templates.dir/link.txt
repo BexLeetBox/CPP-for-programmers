@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/templates.dir/oppgave-1/template.cpp.o -o templates 

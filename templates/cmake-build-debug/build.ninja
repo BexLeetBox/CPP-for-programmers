@@ -41,6 +41,39 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = E$:/CPP/templates/cmake-build-debug/
 # =============================================================================
+# Object build statements for EXECUTABLE target templatesPair
+
+
+#############################################
+# Order-only phony target for templatesPair
+
+build cmake_object_order_depends_target_templatesPair: phony || CMakeFiles/templatesPair.dir
+
+build CMakeFiles/templatesPair.dir/oppgave-2/Pair.cpp.obj: CXX_COMPILER__templatesPair_Debug E$:/CPP/templates/oppgave-2/Pair.cpp || cmake_object_order_depends_target_templatesPair
+  DEP_FILE = CMakeFiles\templatesPair.dir\oppgave-2\Pair.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -Wall
+  OBJECT_DIR = CMakeFiles\templatesPair.dir
+  OBJECT_FILE_DIR = CMakeFiles\templatesPair.dir\oppgave-2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target templatesPair
+
+
+#############################################
+# Link the executable templatesPair.exe
+
+build templatesPair.exe: CXX_EXECUTABLE_LINKER__templatesPair_Debug CMakeFiles/templatesPair.dir/oppgave-2/Pair.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\templatesPair.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = templatesPair.exe
+  TARGET_IMPLIB = libtemplatesPair.dll.a
+  TARGET_PDB = templatesPair.exe.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target templates
 
 
@@ -51,7 +84,7 @@ build cmake_object_order_depends_target_templates: phony || CMakeFiles/templates
 
 build CMakeFiles/templates.dir/oppgave-1/template.cpp.obj: CXX_COMPILER__templates_Debug E$:/CPP/templates/oppgave-1/template.cpp || cmake_object_order_depends_target_templates
   DEP_FILE = CMakeFiles\templates.dir\oppgave-1\template.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always -Wall
   OBJECT_DIR = CMakeFiles\templates.dir
   OBJECT_FILE_DIR = CMakeFiles\templates.dir\oppgave-1
 
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build templates: phony templates.exe
 
+build templatesPair: phony templatesPair.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build templates: phony templates.exe
 #############################################
 # Folder: E:/CPP/templates/cmake-build-debug
 
-build all: phony templates.exe
+build all: phony templatesPair.exe templates.exe
 
 # =============================================================================
 # Built-in targets

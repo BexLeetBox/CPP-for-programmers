@@ -4,6 +4,7 @@
 
 // Function template for generic types
 template <typename Type>
+
 bool equal(Type a, Type b) {
     std::cout << "Using generic template version." << std::endl;
     return a == b;

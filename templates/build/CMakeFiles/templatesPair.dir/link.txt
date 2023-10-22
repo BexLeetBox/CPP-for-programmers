@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/templatesPair.dir/oppgave-2/Pair.cpp.o -o templatesPair 

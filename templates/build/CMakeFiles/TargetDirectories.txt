@@ -1,0 +1,4 @@
+/mnt/e/CPP/templates/build/CMakeFiles/templatesPair.dir
+/mnt/e/CPP/templates/build/CMakeFiles/templates.dir
+/mnt/e/CPP/templates/build/CMakeFiles/edit_cache.dir
+/mnt/e/CPP/templates/build/CMakeFiles/rebuild_cache.dir

@@ -9,13 +9,14 @@
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.24"
+						"string" : "3.22"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "templates",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "templates::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-templates-Debug-d3f9b7c504de49ed63d6.json",
+					"jsonFile" : "target-templates-Debug-5c3474a20d5d80367479.json",
 					"name" : "templates",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "templatesPair::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-templatesPair-Debug-711e2580b0ddc764c575.json",
+					"name" : "templatesPair",
 					"projectIndex" : 0
 				}
 			]
